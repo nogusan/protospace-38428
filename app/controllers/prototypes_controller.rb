@@ -33,7 +33,6 @@ class PrototypesController < ApplicationController
     if @prototype.update(prototype_params)
       redirect_to prototype_path(@prototype)
     else
-      @prototype.save(prototype_params)
       render :edit
     end
   end
